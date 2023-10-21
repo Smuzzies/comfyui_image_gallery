@@ -47,3 +47,6 @@ The app should now be running, and you can access it by opening a web browser an
 
 Customization
 You can customize the gallery's appearance and behavior by modifying the HTML templates, CSS styles, and the Flask application code. Feel free to tailor it to your specific requirements.
+
+![image](https://github.com/Smuzzies/comfyui_image_gallery/assets/110495122/eb8adc34-811e-434b-9ea7-d225f7cc63bb)
+![image](https://github.com/Smuzzies/comfyui_image_gallery/assets/110495122/cf30e7ab-041d-4b9a-99c5-b6d863bb09f8)
