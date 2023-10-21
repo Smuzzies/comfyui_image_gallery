@@ -1,0 +1,129 @@
+/* Reset some default styles */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styles for the image gallery */
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.gallery-title {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-list li {
+    margin: 10px;
+    text-align: center;
+}
+
+/* Style for thumbnails */
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Added box-shadow transition */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Shadow properties */
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4); /* Shadow properties on hover */
+}
+
+/* Pagination styles */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style for the page numbers */
+.pagination a {
+    text-decoration: none;
+    margin: 10px 10px; /* Added margin for spacing, both top and bottom */
+    color: #000; /* Black font color */
+    background-color: #fff; /* White box background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Increased padding for bigger boxes */
+    display: inline-block;
+    font-size: 16px; /* Increased font size */
+}
+
+/* Style for the current page number */
+.pagination a.current-page {
+    background-color: hwb(0 43% 57%); /* Yellow box background color for the current page */
+    color: #ffffff; /* Black font color */
+}
+
+/* Fancybox modal styles */
+.fancybox-slide {
+    text-align: center;
+}
+
+.fancybox-image {
+    max-width: 100%;
+    max-height: 90vh;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Add a background overlay for the modal */
+.fancybox-bg {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Close button in the modal */
+.fancybox-button.fancybox-button--close {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.fancybox-button.fancybox-button--close span {
+    color: #fff !important;
+}
+
+/* Style for the logo container */
+.logo-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Style for the logo image */
+.logo {
+    max-width: 400px; /* Adjust the size as needed */
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hide the gallery title */
+.gallery-title {
+    display: none;
+}
+.footer {
+    text-align: center;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Padding around the footer content */
+    font-size: 12px; /* Font size for the footer text */
+    text-transform: uppercase; /* All caps */
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ComfyUI Output Images</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="logo-container">
+            <img class="logo" src="{{ url_for('static', filename='logo.png') }}" alt="ComfyUI Logo">
+        </div>
+    </header>
+    <ul class="image-list">
+        {% for thumbnail in current_thumbnails %}
+            <li>
+                <a data-fancybox="gallery" href="{{ url_for('static', filename='images/output/' + thumbnail) }}">
+                    <div class="thumbnail">
+                        <img src="{{ url_for('static', filename='thumbnails/' + thumbnail) }}" alt="{{ thumbnail }}">
+                    </div>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <div class="pagination">
+        {% if page > 1 %}
+            <a href="?page=1">&laquo; First</a>
+            <a href="?page={{ page - 1 }}">Previous</a>
+        {% endif %}
+        {% for p in range(1, total_pages + 1) %}
+            <a href="?page={{ p }}" {% if p == page %}class="current-page"{% endif %}>{{ p }}</a>
+        {% endfor %}
+        {% if page < total_pages %}
+            <a href="?page={{ page + 1 }}">Next</a>
+            <a href="?page={{ total_pages }}">Last &raquo;</a>
+        {% endif %}
+    </div>
+    <footer class="footer">
+    All images are copyrighted &#169; 2023
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+</body>
+</html>
