@@ -4,7 +4,7 @@
 
 ComfyUI Output Images Gallery is a simple web application built with Flask to display a gallery of images. It's designed to showcase a collection of images with thumbnails and provides an easy way for users to view and navigate through the gallery.
 
-![ComfyUI Logo](logo.png | width=100)
+<img src="logo.png" width="50%" height="50%">
 
 ## Features
 
