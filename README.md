@@ -28,8 +28,7 @@ Before you begin, ensure you have the following installed:
 
 To use your own images, symlink your image directory to the project's `static/images/output` directory:
 
-```bash
-ln -s /path/to/your/images /path/to/comfyui-gallery/static/images/output
+```ln -s /path/to/your/images /path/to/gallery/static/images/output```
 
 Configure Paths
 You may need to configure the paths for the logo, thumbnails, and original images in the app.py file:
@@ -42,7 +41,7 @@ You can change the port number and host as needed in the app.py file on line 44.
 
 Start the Flask app by running the following command in your terminal or command prompt:
 
-python app.py
+```python app.py```
 
 The app should now be running, and you can access it by opening a web browser and navigating to http://localhost:9999 (or the custom host and port you've specified).
 
