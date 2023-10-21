@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed:
 
 ### Symlink Your Image Directory
 
-To use your own images, symlink your image directory to the project's `static/images/output` directory:
+To use your own images, symlink your image directory to the project's "static/images/output" directory:
 
 ```ln -s /path/to/your/images /path/to/gallery/static/images/output```
 
