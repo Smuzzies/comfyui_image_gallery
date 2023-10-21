@@ -9,7 +9,7 @@ ComfyUI Output Images Gallery is a simple web application built with Flask to di
 ## Features
 
 - Display images with responsive thumbnails.
-- Modern and professional design.
+- Modern and professional design for desktop browser and mobile.
 - Pagination for easy navigation.
 - Click on thumbnails to view full-sized images in a lightbox (Fancybox).
 - Dark mode aesthetic for an elegant look.
